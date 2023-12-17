@@ -46,7 +46,7 @@ public class QuizGame {
             attempts = 0;
 
             System.out.println("Welcome to the Word Guessing Game!");
-            System.out.println("The word contains " + wordLength + " letters.");
+            System.out.println("\nThe word contains " + wordLength + " letters.");
 
             while (attempts < maxAttempts) {
                 boolean wordGuessed = true;
@@ -82,7 +82,7 @@ public class QuizGame {
 
                     if (!found) {
                         attempts++;
-                        System.out.println("Sorry, '" + letter + "' is not in the word. \nAttempts left: " + (maxAttempts - attempts));
+                        System.out.println("\nSorry, '" + letter + "' is not in the word. \nAttempts left: " + (maxAttempts - attempts));
                     }
                 } else {
                     if (guess.equals(selectedWord)) {
@@ -90,13 +90,13 @@ public class QuizGame {
                         break;
                     } else {
                         attempts++;
-                        System.out.println("Incorrect.Try an other one :) \nAttempts left: " + (maxAttempts - attempts));
+                        System.out.println("\nIncorrect.Try an other one :) \nAttempts left: " + (maxAttempts - attempts));
                     }
                 }
             }
 
             if (attempts == maxAttempts) {
-                System.out.println("Sorry :(. \nThe correct word was: " + selectedWord);
+                System.out.println("\nSorry :(. \nThe correct word was: " + selectedWord);
             }
 
             if (!playAgain()) {
@@ -108,7 +108,7 @@ public class QuizGame {
     }
 
     public boolean playAgain() {
-        System.out.print("Do you want to play again? (yes/no): ");
+        System.out.print("\nDo you want to play again? (yes/no): ");
         String answer = scanner.nextLine().trim().toLowerCase();
         return answer.equals("yes");
     }
