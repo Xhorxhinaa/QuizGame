@@ -1,4 +1,5 @@
-Game logic,
+Game logic
+
 Words from a file are being loaded,the readTheWords() method reads words from a specified file into the words ArrayList.
 Following that, a word is chosen randomly from the loaded words.
 The interesting part is that we must find the word while the system tracks guessed letters using the arrays (guessedLetters and letterGuessed) and notify the player whether a guess is correct or when the maximum number of attempts has been reached.
